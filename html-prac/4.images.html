@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Image Gallery
+        </title>
+        <style>
+            .imagcont{
+                margin-top: 10px;
+                margin-left: 5px;
+            }
+            .imagcont ul{
+                color:blue;
+            }
+            .imagcont ul li{
+                margin: 20px;
+                padding:  1px;
+                width: 300px;
+                height: 200px;   
+                float: left;       
+                border: 2px solid red;
+                list-style: none ;
+            }    
+            .imagcont ul li:hover{
+                border: 2px solid blue;
+                background-color: black;
+            }
+            .desc{
+                padding: 8px;
+                text-align: center;
+                font-weight: bolder;
+                font-size: 20px;
+                font-family: sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <h2 style="text-align: center;">Image Gallery website using HTML and CSS</h2>
+        <div class="imagcont">
+            <ul>
+                <li>
+                    <a target="_blank" href="pic1.jpg"><img src="pic1.jpg" height="200px" width="300PX"></a><div class="desc">pic1</div>
+                </li>
+                <li>
+                    <a target="_blank" href="pic2.jpg"><img src="pic2.JPG" height="200px" width="300PX"></a><div class="desc">pic2</div>
+                </li>
+                <li>
+                    <a target="_blank" href="pic3.jpg"><img src="pic3.JPG" height="200px" width="300PX"></a><div class="desc">pic3</div>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
