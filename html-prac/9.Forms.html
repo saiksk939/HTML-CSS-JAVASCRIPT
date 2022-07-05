@@ -13,34 +13,63 @@
             body form{
                 background-color: #001D6E;
                 color: white;
-                width: 400px;
-                margin-left:100px ;
+                width: 500px;
+                margin-left:30px ;
                 border-radius: 10px;
                 padding: 10px;
+                background-position: center;
             }
         </style>
     </head>
     <body>
         <h2>Registration Details</h2>
         <form action="8.Tables.html" autocomplete="off" method="post">
-            First Name:<input type="text" name="first name" autofocus placeholder="First Name" ><br><br>
-            Last Name: <input type="text" name="last name" placeholder="Last Name"><br><br>
-            Gender:    <input type="radio" name="gender">Male
-                       <input type="radio" name="gender">Female<br><br>
-            DOB:       <input type="date" name="DOB"><br><br>
-            Phone no:  <input type="number" name="phone number" placeholder="Phone Number"><br><br>
-            Email:     <input type="email" name="email" placeholder="Email"><br><br>
-            Languages: <input type="checkbox" name="language">English
-                       <input type="checkbox" name="language">Telugu<br><br>
-            Address:   <textarea rows="3" cols="50"></textarea><br><br>
-                       <input type="file"><br><br>
-                       <select name="menu"><br><br>
-                        <option value="maths">Maths</option>
-                        <option value="cs">Computer Science</option>
-                        <option value="physics">Physics</option>
-                    </select>
-            <input type="submit" name="submit"><br><br>
-            <input type="reset" name="reset">
+        <table>
+        <tr>
+            <td>First Name:</td> <td><input type="text" name="first name" autofocus placeholder="First Name" ></td>
+        </tr>
+        <tr>
+            <td>Last Name:</td> <td><input type="text" name="last name" placeholder="Last Name"></td>
+        </tr>
+        <tr>
+            <td>Gender:</td> <td><input type="radio" name="gender">Male
+                                 <input type="radio" name="gender">Female</td>
+        </tr>
+        <tr>            
+            <td>DOB:</td> <td><input type="date" name="DOB"></td>
+        </tr>
+        <tr>
+            <td>Phone no:</td> <td><input type="number" name="phone number" placeholder="Phone Number"></td>
+        </tr>
+        <tr>
+            <td>Email:</td> <td><input type="email" name="email" placeholder="Email"></td>
+        </tr>
+        <tr>
+            <td>Address:</td> <td><textarea rows="3" cols="0"></textarea></td>
+        </tr>
+        <tr>
+            <td>state:</td> <td><select name="state">
+                            <option>Telangana</option>
+                            <option>Andhra Pradesh</option>
+                            <option>Tamil Nadu</option>
+                        </select></td>
+        </tr>            
+        <tr>
+            <td>Languages:</td> <td><input type="checkbox" name="language">English
+                                    <input type="checkbox" name="language">Telugu</td>
+        </tr>
+        <tr>    
+            <td>hobbies:</td> <td><select name="hobbies" multiple="multiple">
+                            <option>Coding</option>
+                            <option>Gaming</option>
+                            <option>Writing</option>
+                            <option>Cricket</option>
+                        </select></td>
+        </tr>            
+        <tr><td><input type="submit" name="submit"></td>
+            <td><input type="reset" name="reset"></td>
+        </tr>
+        </table>            
         </form>
     </body>
 </html>

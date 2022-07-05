@@ -1,0 +1,14 @@
+body{
+    direction:ltr;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    text-indent: 50px;
+    text-align:justify;
+    text-decoration:none;
+    text-transform:none;
+    white-space:nowrap ;
+    text-shadow: 4px 4px 8px blueviolet;
+}
+a{
+    text-decoration: none
+}
