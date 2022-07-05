@@ -1,0 +1,17 @@
+#3 ways/method
+1.head tag
+2.body tag
+3.External file
+
+#3 ways
+1.document.write(Testing Purpose)
+2.window.alert(Alert Box)
+3.innerHTML(Form Validation)
+ 
+Variable= to store a value
+
+It is a case-sensitive language
+
+Types of Variables:-
+1.Local Variables
+2.Global Variables

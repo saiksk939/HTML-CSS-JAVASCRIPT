@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Forms</title>
+        <style>
+            h2{
+                color: bisque;
+                margin-left: 110px;
+            }
+            body{
+                background-color: #570530;
+            }
+            body form{
+                background-color: #001D6E;
+                color: white;
+                width: 400px;
+                margin-left:100px ;
+                border-radius: 10px;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Registration Details</h2>
+        <form action="8.Tables.html" autocomplete="off" method="post">
+            First Name:<input type="text" name="first name" autofocus placeholder="First Name" ><br><br>
+            Last Name: <input type="text" name="last name" placeholder="Last Name"><br><br>
+            Gender:    <input type="radio" name="gender">Male
+                       <input type="radio" name="gender">Female<br><br>
+            DOB:       <input type="date" name="DOB"><br><br>
+            Phone no:  <input type="number" name="phone number" placeholder="Phone Number"><br><br>
+            Email:     <input type="email" name="email" placeholder="Email"><br><br>
+            Languages: <input type="checkbox" name="language">English
+                       <input type="checkbox" name="language">Telugu<br><br>
+            Address:   <textarea rows="3" cols="50"></textarea><br><br>
+                       <input type="file"><br><br>
+                       <select name="menu"><br><br>
+                        <option value="maths">Maths</option>
+                        <option value="cs">Computer Science</option>
+                        <option value="physics">Physics</option>
+                    </select>
+            <input type="submit" name="submit"><br><br>
+            <input type="reset" name="reset">
+        </form>
+    </body>
+</html>
