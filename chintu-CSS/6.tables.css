@@ -1,0 +1,10 @@
+table{
+    caption-side: top;
+    border-collapse:separate ;
+    border-spacing: 5px;
+    empty-cells: hide;
+    border-color: red;
+    border-width:2px;
+    border-style: dashed;
+    
+}

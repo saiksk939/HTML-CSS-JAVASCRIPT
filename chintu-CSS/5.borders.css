@@ -1,0 +1,24 @@
+img{
+    border: 10px solid;
+    border-color: yellow;
+    width: 700px;
+    height: 600px;
+    border-bottom-color: blue ;
+    border-top-color: brown;
+    border-left-color: green;
+    border-right-color: red ;
+    border-style:dotted;
+    border-width: 40px; 
+    border-bottom-width: 40px;
+    border-top-width: 40px ;
+    border-left-width: 10px ;
+    border-right-width: 10px ;
+    border-left-style: dashed;
+    border-right-style:double;
+    border-bottom-style: dotted;
+    border-top-style: ridge;
+
+    
+
+    
+}
