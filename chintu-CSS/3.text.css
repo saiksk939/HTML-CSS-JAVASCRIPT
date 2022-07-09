@@ -6,7 +6,7 @@ body{
     text-align:justify;
     text-decoration:none;
     text-transform:none;
-    white-space:nowrap ;
+    white-space:nowrap ;  /* nowrap,inherit,insect*/
     text-shadow: 4px 4px 8px blueviolet;
 }
 a{

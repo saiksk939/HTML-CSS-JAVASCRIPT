@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Element selector</title>
+        <style>
+            *{
+                color:firebrick;
+                background-color: lightblue;
+            }
+            h2,h3,p{
+                color: red;
+                font-family: 'Segoe UI';
+            }
+            p::first-letter{
+                color: blue;
+                font-size: 200%;
+            }
+            img{
+                width: 300px;
+                height: 200px;
+                margin-left: 40%;
+                transition: 1s all;
+
+            }
+            img:hover{
+                transform:matrix(2.0);
+            }
+        </style>
+    </head>
+    <body>
+        <h2>CSS Selectores</h2>
+        <h2>CSS selectors types</h2>
+        <h3 class="hear">Element selector</h3>
+        <p id="intro">CSS are used to select the elements to apply different sections using id's</p>
+        <img src="E:\webdevlopment\HTML.CSS.JAVASCRIPT\html-prac\pic1.jpg" alt="nature.jpg">
+    </body>
+</html>

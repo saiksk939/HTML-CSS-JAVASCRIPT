@@ -1,0 +1,13 @@
+img{
+    border: 3px solid;
+    border-color: red;
+    border-style: dashed;
+    border-width: 5px;
+    width: 300px;
+    height: 200px;
+}
+img:hover{
+    width: 500px;
+    height: 400px;
+    border-radius: 10px;
+}

@@ -1,0 +1,5 @@
+ol{
+    list-style-type:lower-greek ;
+    list-style-position:inside;
+    list-style-image: url("giphy.gif") ;
+}

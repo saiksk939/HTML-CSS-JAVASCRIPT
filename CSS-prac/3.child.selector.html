@@ -1,0 +1,33 @@
+<!--In this Child selector it selects in div only child ignores from other elements like (selection) p-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Selectors</title>
+    </head>
+    <style>
+        div > p{
+            background-color: greenyellow;
+            color: blue;
+            font-size: 20px ;
+        }
+    </style>
+    <body>
+        <h2>Child selector</h2>        
+        
+        <div>
+            <p>Paragraph 1 in the div.</p>
+            <p>Paragraph 2 in the div.</p>
+            <section>
+                <!--not child but descendent-->
+                <p>Paragraph 3 in the div (inside a section element)</p>
+            </section>
+            <p>Paragraph 4. in th div</p>
+        </div>
+
+        <p>Paragraph 5. Not in a div.</p>
+        <p>Paragraph 6. Not in a div.</p>
+    </body>
+
+    </body>
+</html>

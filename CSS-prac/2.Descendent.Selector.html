@@ -1,0 +1,35 @@
+<!--Types of selectors
+    * Descendent selctor(space)
+    * Child selecor(>)
+    * Adjacent sibling selector(+)
+    * General sibling selector(~)-->
+
+<!--In this Descendent selector it selects in div all p-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Selectors</title>
+    </head>
+    <style>
+        div p{
+            background-color: greenyellow;
+            color: red;
+            font-size: 20px ;
+        }
+    </style>
+    <body>
+        <h2>Descendent selector</h2>        
+
+        <div>
+            <p>Paragraph 1 in the div.</p>
+            <p>Paragraph 2 in the div.</p>
+            <section><p>Paragraph 3 in the div.</p></section>
+        </div>
+
+        <p>Paragraph 4. Not in a div.</p>
+        <p>Paragraph 5. Not in a div.</p>
+    </body>
+
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!--In this General sibling selector it selects after div all p-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Selectors</title>
+    </head>
+    <style>
+        div ~ p{
+            background-color: greenyellow;
+            color: blue;
+            font-size: 20px ;
+        }
+    </style>
+    <body>
+        <h2>Adjacent sibling selector</h2>        
+        
+        <p>the following examples selects the first p element that are place</p>
+
+        <p>Paragraph 1</p>
+
+        <div>
+            <p>Paragraph 2.</p>
+        </div>
+        
+        <p>Paragraph 3.</p>
+        <code>Some code.</code>
+        <p>Paragraph 4.</p>
+    </body>
+
+    </body>
+</html>   
