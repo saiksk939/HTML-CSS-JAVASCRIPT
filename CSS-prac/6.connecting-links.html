@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            connecting links
+        </title>
+        <style>
+            a:link{
+                color: red;
+            }
+            a:visited{
+                color: green;
+            }
+            a:hover{
+                color: blue;
+                font-size: x-large;
+            }
+            a:active{
+                color:darkorchid;
+            }
+            input[type=text]{
+                width:100px;
+                transition:width .50 ease-in-out;
+            }
+            input[type=text]:focus{
+                width: 300px;
+                background-color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <p><b><a href="https:practically.com">This is a Example link</a></b></p>
+        Search: <input type="text" name="search">
+    </body>
+</html>
