@@ -1,12 +1,18 @@
 function logo(){
     var ranto=document.getElementById("mycanvas");
     var ctxt=ranto.getContext("2d");
+    var ranto2=ctxt.createLinearGradient(20,100,500,0);  /*x1,y1,x2,y2*/
 
-    ctxt.fillStyle="red";
-    ctxt.fillRect(20,20,200,100);  /*x-axis to move left & right,y-axis to move up & down, width, Height */
-    ctxt.strokeStyle="green";
-    ctxt.strokeRect(20,20,200,100);   /*x-axis to move left & right,y-axis to move up & down, width, Height */
+    ranto2.addColorStop(.0,"red");  /*Size(value must be (0-1)), Color*/
+    ranto2.addColorStop(.25,"black");
+    ranto2.addColorStop(.45,"blue");
+    ranto2.addColorStop(.55,"brown");
+    ranto2.addColorStop(.75,"yellow");
+    ranto2.addColorStop(.85,"green");
+    ranto2.addColorStop(1,"pink");
+    ctxt.font="50px elephant"
+    ctxt.fillStyle=ranto2;
+    ctxt.fillText("SAIKSK",150,200)
 
-    ctxt.clearRect(30,30,180,80 );
 }
 window.addEventListener("load",logo,false);
