@@ -1,0 +1,38 @@
+<!--3 ways
+1)By Array Literal
+2)Array Directly(New Keyword)
+3)Array Constructor-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arrays is javascript</title>
+    </head>
+    <body>
+        <h1>Arrays in javascript</h1>
+        <script>
+            var sai=["Abhi","Bhabi","Raj"];   //By Array Literal
+            for(i=0; i<sai.length; i++){
+                document.write(sai[i] + "<br>");
+            }
+        </script><br>
+        <script>
+            var i=2;
+            var saiksk=new Array();    //By Directly(new keyword)
+            saiksk[0]="Abhi";
+            saiksk[1]="Bhabi";
+            saiksk[2]="Raj";
+            saiksk[3]="don";
+            while(i<saiksk.length){
+                document.write(saiksk[i] + "<br>");
+                i++;
+            }
+        </script><br>
+        <script>
+            var ranto=new Array("Abhi","Raj","Don");  //Array constructor
+            for(i=0; i<ranto.length; i++){
+                document.write(ranto[i] + "<br>")
+            }
+        </script>
+    </body>
+</html>

@@ -21,7 +21,7 @@ Types of Variables:-
 4.Regular Expression
 5.Array= We can save more than one values in a variable using "Arrays".)
 
-(6types of OPERATORS
+6 types of OPERATORS
 1)Arithmetic Operators(+, -, /, %, ++, --)
 2)Assignment Operators(=, +=, -=, *=, /=, %=)
 3)Comparison/Relational Operators(==, !=, <, <=, >, >=)
@@ -29,8 +29,17 @@ Types of Variables:-
 5)Logical Operators(&&, ||, !)
 6)Special Operators(?:, delete, in, instanceof, new, typeof, void, yield)
 
+(Comparison operator:- It is to check for only one condition)
+(Bitwise operator:- It is to check for one or more  conditions)
+
+
 Loops:- To display same content many times we use loops.
 1.for loops
 2.while loop
 3.do-while loop
 Ex:for(i=0; i<=5; i++){    //assignment(assinging value to variable; condition; increment or decrement operator)
+
+3 ways
+1)By Array Literal
+2)Array Directly(New Keyword)
+3)Array Constructor

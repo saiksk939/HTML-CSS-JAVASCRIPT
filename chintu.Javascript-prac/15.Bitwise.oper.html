@@ -1,0 +1,55 @@
+<!--(6types of OPERATORS
+1)Arithmetic Operators(+, -, /, %, ++, --)
+2)Assignment Operators(=, +=, -=, *=, /=, %=)
+3)Comparison/Relational Operators(==, !=, <, <=, >, >=)
+4)Bitwise Operators(&, \, ^, ~, <<, >>, >>>)
+5)Logical Operators(&&, ||, !)
+6)Special Operators(?:, delete, in, instanceof, new, typeof, void, yield)-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bitwise Operators</title>
+    </head>
+    <body>
+        <h1>Bitwise Operators</h1>
+        <script>
+            var x=55;
+            var y=35;
+            var z=45;          // '&' two conditions must be true
+            if(x<y & x<z){    // & If first condition is false, it checks other conditions
+                document.write("x is smaller than y and z");
+            }else if(x>y & y<z){
+                document.write("x greater than y and y is smaller than z");    
+            }else{
+                document.write("y is greater number")
+            }
+        </script><br>
+        <script>
+            var x=55;
+            var y=35;
+            var z=45;
+            if(x<40 | y>x){    // '|' any one condition must be true
+                document.write("paying");
+            }else if(x==80 | y==z){
+                document.write("receiving");    
+            }else{
+                document.write("fail")
+            }
+        </script><br>
+        <script>
+            var x=55;
+            var y=35;
+            var z=45;
+            if(x==80 ^ y>40){   // '^' any one condition must be true, two conditions not  true or fail
+                document.write("welxome");
+            }else if(x==70 ^ y>20){
+                document.write("home");
+            }else{
+                document.write(end);
+            }
+        </script><br>
+        
+
+    </body>
+</html>        
