@@ -9,6 +9,5 @@ function logo(){
     ctxt.fillText("SAIKSK",120,200);
     ctxt.rotate(Math.PI/12);   //radians
     ctxt.fillText("SAIKSK",120,200);
-
 }    
 window.addEventListener("load", logo, false);
