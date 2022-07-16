@@ -1,0 +1,19 @@
+CSS Selectors
+Types: 
+>Universal Sel: used to define common styles for all html tags/elements
+           Syn: *{
+		           property:value;
+				   property:value;
+		   `````}
+
+
+>tag sel
+>id sel
+>class sel
+>group se
+>child sel
+>direct sel
+>compound sel
+>attribute sel
+>pesudo sel/classes
+>pesudo elements

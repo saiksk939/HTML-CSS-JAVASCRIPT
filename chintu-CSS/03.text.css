@@ -8,7 +8,14 @@ body{
     text-transform:none;
     white-space:nowrap ;  /* nowrap,inherit,insect*/
     text-shadow: 4px 4px 8px blueviolet;
+    letter-spacing: 10px;
+    line-height: 40px;
+}
+#para1{
+    color: red;
+    text-shadow: 4px 4px 4px black; /*x-axis left-right,y-axis top-bottom,thick(or)blur*/
+
 }
 a{
     text-decoration: none
-}
+} 
