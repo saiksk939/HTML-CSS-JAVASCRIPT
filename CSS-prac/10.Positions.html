@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Positions</title>
+        <style>
+            .container{
+                height: 210px;
+                width: 1260px;
+                border: 2px solid black;
+                padding: 5px;
+
+            }
+            .pic{
+                height: 200px;
+                width: 300px;
+                border: 2px solid red;
+                margin: 3px;
+            }
+            #pic2{
+                position:fixed;
+                right:20px;
+                bottom: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <img class="pic" id="pic1" src="pic1.jpg">
+            <img class="pic" id="pic2" src="pic2.jpg">
+            <img class="pic" id="pic3" src="pic3.jpg">
+            <img class="pic" id="pic4" src="giphy.gif"> 
+        </div>
+    </body>
+</html>
