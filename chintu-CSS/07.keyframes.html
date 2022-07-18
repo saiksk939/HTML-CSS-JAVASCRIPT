@@ -8,16 +8,37 @@
                 from{box-shadow:1px 1px 2px 2px red;}  /*x-axis left-right,y-axis top-bottom, blur, color spread area*/
             /*    to{box-shadow:1px 1px 2px 2px blue;}
             }*/
-            @keyframes anime2{
+            /*@keyframes anime2{
                 20%{background: red;}
                 40%{background: green;}
                 75%{background: blue;}
                 100%{background: yellow;}
-            } 
-            p{
-                animation-name: anime2;
+            } */
+            @keyframes move{
+                1%{left:1px; top:1px}
+                20%{left:1100px; top:530px}
+                40%{left:1100px; top:1px; transform: rotate(360deg);}
+                60%{left:45%; top:45%}
+                80%{left:45%; top:1px; transform:skew(25deg )}
+                100%{left:1px; top:530px}
+            }
+            @keyframes left-right{
+                from{left:1px; top:1px;}
+                to{left:1060px; top:1px;}
+            }
+            #h1{
+                position: absolute;
+                animation-name: left-right;
+                animation-duration: 1s;
+                animation-iteration-count:infinite;
+                animation-direction: alternate;
+            }
+            img{
+                position: absolute;
+                animation-name: move;
                 animation-duration: 10s;
                 animation-iteration-count:infinite;
+                animation-direction:normal ; /*normal/reverse/alternate*/
             }
             button:hover{
                 animation-name: anime2;
@@ -28,10 +49,12 @@
         </style>
     </head>
     <body>
-        <h1>Hello World</h1>
+        <img src="pic1.jpg" width="100px" height="80px">
+        <h1 id="h1">Hello World</h1>
         <h2>Welcome</h2>
         <p>A paraphrase is a restatement of the meaning of a text or passage using other words. The term itself is derived via Latin paraphrasis, from Ancient Greek παράφρασις 'additional manner of expression'. 
             The act of paraphrasing is also called paraphrasis.</p>
         <button>Submit</button>
+
     </body>
 </html>
