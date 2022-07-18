@@ -4,20 +4,34 @@
         <meta charset="UTF-8">
         <title>Keyframes</title>
         <style>
-            @keyframes anime1{
-                from{background: red;}
-                to{background: blue;}
+            /*@keyframes changecolor{
+                from{box-shadow:1px 1px 2px 2px red;}  /*x-axis left-right,y-axis top-bottom, blur, color spread area*/
+            /*    to{box-shadow:1px 1px 2px 2px blue;}
+            }*/
+            @keyframes anime2{
+                20%{background: red;}
+                40%{background: green;}
+                75%{background: blue;}
+                100%{background: yellow;}
+            } 
+            p{
+                animation-name: anime2;
+                animation-duration: 10s;
+                animation-iteration-count:infinite;
             }
-            h1{
-                animation-name: anime1;
+            button:hover{
+                animation-name: anime2;
                 animation-duration: 5s;
+                animation-iteration-count:3;
+                animation-direction:alternate ; /*normal/reverse/alternate*/
             }
-
         </style>
     </head>
     <body>
         <h1>Hello World</h1>
         <h2>Welcome</h2>
-
+        <p>A paraphrase is a restatement of the meaning of a text or passage using other words. The term itself is derived via Latin paraphrasis, from Ancient Greek παράφρασις 'additional manner of expression'. 
+            The act of paraphrasing is also called paraphrasis.</p>
+        <button>Submit</button>
     </body>
 </html>
