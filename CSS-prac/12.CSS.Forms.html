@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Forms</title>
+        <link rel="stylesheet" href="Form.css">
+    </head>
+    <body>
+        <form action="#" style="border: 2px solid red;">
+            <div class="container">
+                <h1>Sign Up</h1>
+                <p>Please Enter Your Details</p>
+                <hr>    
+                <label><b>Email</b></label>
+                <input type="email" name="email" placeholder="Enter Email" required>
+                
+                <label><b>Password</b></label>
+                <input type="password" name="Password" placeholder="Enter Password " required>
+                
+                <label><b>Repeat Password</b></label>
+                <input type="password" name="password" placeholder="Enter repeat Password" required>
+                
+                <label>
+                <input type="checkbox" name="remember" >Remember Me
+                </label>
+                
+                <p>By creating the account you are agree to our 
+                    <a href="#" style="color: red;" >Terms & conditions</a></p>
+            
+                <div class="login">
+                    <button type="button" class="cancelbtn" name="Cancel"><b>Cancel</b></button>
+                    <button type="submit" class="submitbtn" name="submit"><b>Sign Up</b></button>
+                </div>
+                </div> 
+        </form>
+    </body>
+</html>
