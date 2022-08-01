@@ -1,0 +1,30 @@
+Datatypes
+Primitive dt:
+    PDT stores data direction
+    stack area
+    non-ref dt
+    1 value @time
+    ex:string,object,number,boolean,undefine
+
+non-Primitive dt:
+    NPDT stores address/reference of data
+    heap area
+    ref dt
+    no.of values @time
+    ex:array,class
+
+
+PDT: string,object,number,boolean,undefine
+    string=>"" '' ``
+    
+    number=> numeric values
+    
+    boolean=> true false
+    
+    undefine=>(value not specified then datatype is undefine)
+    
+    object=>null {} 
+
+    type=> check dt of varible
+    syn:   type of varname
+            type of value    
