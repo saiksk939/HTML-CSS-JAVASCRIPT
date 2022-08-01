@@ -27,4 +27,54 @@ PDT: string,object,number,boolean,undefine
 
     type=> check dt of varible
     syn:   type of varname
-            type of value    
+            type of value     
+
+OPERATORS:-
+*Binary Operators=> two operands operator
+                    1)Arithmetic
+                    2)assignment
+                    3)Relational
+                    4)Logical
+                    5)Bitwise
+                    6)concate
+*ternary Operators=> three operands operator
+                     ?:
+
+1)Arithmetic Operators==> used to perform basic math calculations
+    syn: (+, -, /, %, ++, --)
+
+2)Assignment Operators==> used to store data into memory block/variable
+    syn: (=)
+  sub operator of assignment op is
+  shorthand/shortcut operator: used to simple arith or Bitwise
+    syn: (=, +=, -=, /=, >>=, <<==, **=, *=, /=, %=)   
+    
+
+3)Comparison/Relational Operators==> used to compare any two values these are 
+                                     boolean op, they returns true or false
+    syn: (==, !=, <, >, <=, >=, ===, !==)
+
+4)Bitwise Operators
+    syn: (&, \, ^, ~, <<, >>, >>>)
+
+5)Logical Operators==> used to multiple comparisions @time 
+                       these are boolean opm=, they returns true or false
+    syn: (&&, ||, !)
+
+6)Concatination operator=> used to append two values. to perform Concatination
+                         one of operand should be string
+    syn: +
+
+Special Operators(?:, delete, in, instanceof, new, typeof, void, yield)
+
+unary operator=>used to perform increment or decrement
+                ++ => increment op, used to add 1 to an existing value
+                -- => decrement op, used to subtract 1 to an existing value
+                    variable++ post incre
+                    ++variable pre incre
+                    variable-- post decre
+                    --variable pre decre
+
+ternary operator=> used to perform decition making operation based on input values
+    syn: ?:
+ also called as conditional operator

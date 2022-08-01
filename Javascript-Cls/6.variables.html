@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo variables</title>
+</head>
+<body>
+    <script>
+        /*loosly typed ==> in js a varible accepts to store any 
+        type of value*/
+        var n=100; //number
+        document.write(n+'<br>');
+        n="ram"; //string
+        document.write(n+'<br>');
+        n=true;  //boolean
+        document.write(n+'<br>');
+
+        /*dynamic typed ==> with out declaring variables, we can use 
+        directly in program. means auto declaration*/
+        x=10;
+        y="apple";
+        document.write("X "+x+'<br>');
+        document.write("Y "+y+'<br>'); 
+        /*note: x & y are declared in global scopre
+            both vars are declared in window object 
+                window.x
+                window.y*/
+        document.write(window.x+'<br>'+window.y);
+    </script>
+</body>
+</html>

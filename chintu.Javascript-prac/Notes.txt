@@ -42,4 +42,4 @@ Ex:for(i=0; i<=5; i++){    //assignment(assinging value to variable; condition; 
 3 ways
 1)By Array Literal
 2)Array Directly(New Keyword)
-3)Array Constructor
+3)Array Constructor 
