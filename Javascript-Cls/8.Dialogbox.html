@@ -1,0 +1,45 @@
+<!--Dialog box
+dialogs: > alert
+         > prompt
+         > confirm
+not allowed to use html tags
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialgs</title>
+</head>
+<body>
+    <h1>Alert confirm</h1>
+    <script>
+        alert('welcome')
+        let a=15, b=20;
+        alert('product is '+a*b)
+        alert('pipe steel water')
+        alert(`apple\nmango\ngrapes`)
+
+        confirm('do you want to logout?')
+        
+        let x=confirm('do you want to delete?')
+        document.write(x+'<br>')
+        /*if(x==true)
+            delete code
+        else
+            dont do anything*/
+        
+        prompt('enter name')
+
+        let n=prompt('enter name3')
+        document.write(n,'<br>')
+        
+        let c=prompt('enter name4')
+        let d=prompt('enter age')
+        document.write(c+" "+d+" "+'years old')
+    </script>
+</body>
+</html>

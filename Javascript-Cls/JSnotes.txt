@@ -29,6 +29,7 @@ PDT: string,object,number,boolean,undefine
     syn:   type of varname
             type of value     
 
+---------------------------------------------------------------
 OPERATORS:-
 *Binary Operators=> two operands operator
                     1)Arithmetic
@@ -78,3 +79,17 @@ unary operator=>used to perform increment or decrement
 ternary operator=> used to perform decition making operation based on input values
     syn: ?:
  also called as conditional operator
+
+---------------------------------------------------------------------------------------
+JavaScript string with escape sequences: An escape character is consisting
+        of backslash "/" symbol with an alphabet. The following are frequently
+        using escape characters.
+
+1. \n: inserts a new line
+2. \t: inserts a tab space
+3. \r : carriage return
+4. \b : backspace
+5. \f: form feed
+G, \': single quote
+7. \": double quote
+8. \\: Backslash

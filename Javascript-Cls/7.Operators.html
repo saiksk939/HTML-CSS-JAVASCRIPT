@@ -8,7 +8,7 @@
 </head>
 <body>
     <script>
-        let x=10, y=8;
+        let x=13, y=8;
         document.write(x+y,'<br>')
         document.write(y**3,'<br>') //arithmetic
 
@@ -26,8 +26,17 @@
         document.write('rama '+'rao','<br>')
         document.write('x value is'+x,'<br>') //concatination
         document.write('apple '+true,'<br>')
-        document.write(y+true)
+        document.write(y+true,'<br>')  //concatination
+
+        document.write(10%2==0?'Even number':'Odd number','<br>')
+        document.write(x%2==0?'Even number':'Odd number','<br>')
         
+        x++;  //post
+        document.write('X val '+x+'<br>')
+        ++x; //pre
+        document.write('X val '+x+'<br>')
+        let res= y*x++;
+        document.write(x+' '+y+' '+res+' '+'<br>')
 
     </script>
 </body>
