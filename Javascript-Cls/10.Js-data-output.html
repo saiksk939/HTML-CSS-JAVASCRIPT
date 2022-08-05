@@ -1,0 +1,32 @@
+<!--
+    id)==> id attribte is used to access the data in our javascript 
+    or Javascript won't accept any of html tags 'id' is compulsary   
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js data and output </title>
+</head>
+<body>
+    <h3>Js data and output in different ways</h3>
+    <input type="text" id="ft1" placeholder="First numver"><br>
+    <input type="text" id="ft2" placeholder="Second number"><br>
+    <!--<button onclick="document.write(parseInt(ft1.value)+parseInt(ft2.value))">Add</button> <br>
+    OR-->
+    
+    <!--<button onclick="alert(parseInt(ft1.value)+parseInt(ft2.value))">Add</button><br>
+    OR-->
+
+    <button onclick="res.value=parseInt(ft1.value)+parseInt(ft2.value)"> + </button>
+    <button onclick="res.value=parseInt(ft1.value)-parseInt(ft2.value)"> - </button>
+    <button onclick="res.value=parseInt(ft1.value)*parseInt(ft2.value)"> * </button>
+    <button onclick="res.value=parseInt(ft1.value)/parseInt(ft2.value)"> / </button>
+    <button onclick="res.value=parseInt(ft1.value)%parseInt(ft2.value)"> % </button>
+    <button onclick="res.value=parseInt(ft1.value)**parseInt(ft2.value)"> ^ </button>
+    <br>
+    <output id="res"></output>
+</body>
+</html>  

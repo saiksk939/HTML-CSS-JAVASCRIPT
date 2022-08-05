@@ -1,3 +1,14 @@
+<!--
+    parseInt()=> string mode number into integer
+    "100"=> 100
+    "10.55"=> 10
+    "ram"=> NaN (error message)
+
+    parseFloat()=> string mode number into floating
+    "100"=> 100.0
+    "10.55"=> 10.55
+    "ram"=> NaN (error message)
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,8 +22,8 @@
     <script>
         let x=prompt('enter first number')
         let y=prompt('enter second number')
-        let res=x+y;
-        document.write('sum is'+res)
+        let res=parseFloat(x)+parseFloat(y);
+        document.write('sum is '+res)
     </script>
     <br>
     <script>document.write('hello&#128536;')</script>
