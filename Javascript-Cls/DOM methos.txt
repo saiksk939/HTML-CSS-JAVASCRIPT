@@ -1,0 +1,21 @@
+DOM Methods
+    getElementById()
+        get instance(or)Object of html Element By using Id attri()
+        it creates an object of special html Element
+        its document object's Method
+syn: document.getElementById("id")
+- - - - -
+    getElementByName()
+        get instance(or)Object of html Element By using Name attri()
+        it creates an object of special html Element
+        its document object's Method
+syn: document.getElementByName("name")
+- - - - -
+    getElementByTagName()
+        get instance(or)Object of html Element By using TagName 
+        it creates an object of special html Element
+        its document object's Method
+syn: document.getElementByTagName("tagname")
+
+
+        

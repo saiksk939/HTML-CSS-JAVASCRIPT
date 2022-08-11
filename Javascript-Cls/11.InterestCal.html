@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Interest cal</title>
+    <link rel="stylesheet" href="Interest.css">
+</head>
+<body>
+        <div>
+        <h3>Interest Calculator</h3>
+        <label>Principal Amount</label><br>
+        <input type="text" id="pramt"><span>&#8377;</span><br>
+
+        <label>Time</label><br>
+        <input type="text" id="time"><span>Year(s)</span><br>
+
+        <label>Rate of Interest</label><br>
+        <input type="text" id="roi"><span>%</span><br>
+
+        <!--<p> => is using to align button in center-->
+        <p> 
+        <button onclick="compute()">Calculate</button>
+        </p>
+        <output id="result">GFs</output>
+
+        <script>
+            function compute(){
+                let p,t,r,si;        //local vars
+                //collecting data from ui
+                p=pramt.value
+                t=time.value
+                r=roi.value
+                si=p*t*r/100;
+                result.value="Simple Int Amount:Rs."+si;
+            }
+        </script>
+    </div>
+</body>
+</html>

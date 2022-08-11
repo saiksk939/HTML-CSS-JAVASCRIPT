@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>get-element-id</title>
+</head>
+<body>
+    <h1 id="id1">Welcome</h1>
+    <input type="text" id="tf" value="100">
+    <hr>
+    <script>
+        let h=document.getElementById("id1")
+        document.write(h.innerText,"<br>")
+        //h.innerText="hello";  modifying data on h1
+        //h.innerText+=", hello";  Appending data on h1
+        //h.innerText=""; deleting data on h1 
+
+        let tb=document.getElementById("tf")
+        document.write(tb.value,"<br>")
+        //tb.value="222"; modify
+        //tb.value+="225";
+        tb.value="";
+    </script>
+
+</body>
+</html>
