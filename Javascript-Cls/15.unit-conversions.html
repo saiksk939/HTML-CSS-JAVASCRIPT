@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events JS</title>
+    <script>
+        function myfun()
+        {
+            alert("Yeh,uou pushed me")
+        }
+    </script>
+</head>
+<body>
+    <table align="center" style="background: rgb(91, 194, 242)">
+    <caption><h3>Unit Conversion</h3></caption>
+    <tr>
+        <td><label>Kilogram</label></td><td><label>Pound</label></td>
+    </tr>
+    <tr>
+        <td><input type="text" id="kg"></td><td><input type="text" id="pd" readonly></td>
+    </tr>
+    <tr align="center">
+        <td colspan="2"><button id="bt">Convert </button></td>
+    </tr>
+    <tr>
+        <td> &nbsp;</td>
+    </tr>
+        <td><label>Pound</label></td><td><label>Kilogram</label></td>
+    </tr>
+    <tr>
+        <td><input type="text" id="pd1"></td><td><input type="text" id="kg1" readonly></td>
+    </tr>
+    <tr align="center">
+        <td colspan="2"><button id="bt1">Convert </button></td>
+    </tr>
+    </table> 
+
+    <script>
+        //2nd approch
+        const b1=document.getElementById("bt");
+        b1.onclick=function(){
+            const kgtb=document.getElementById("kg");
+            const pdtb=document.getElementById("pd");
+            let res=kgtb.value*2.20462;
+            pdtb.value=res;
+        } ;
+        const b2=document.getElementById("bt1");
+        b2.onclick=function(){
+            const kgtb=document.getElementById("kg1");
+            const pdtb=document.getElementById("pd1");
+            let res=pdtb.value/2.20462;
+            kgtb.value=res;
+        } ;
+    </script>
+</body>
+</html>

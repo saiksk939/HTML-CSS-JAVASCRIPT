@@ -1,3 +1,12 @@
+<!--
+    innerText => used for paired tags & non-input elements
+              => it supports only text data, but not html tags
+    innerHTML => used for paired tags & non-input elements
+              => it supports only text data & html tags
+    
+    value => used for un-paired tags & input elements
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +25,10 @@
         //h.innerText="hello";  modifying data on h1
         //h.innerText+=", hello";  Appending data on h1
         //h.innerText=""; deleting data on h1 
-
+        
+        //h.innerText="&#8377;1000"; not supported
+        h.innerHTML="&#8377;1000";
+        
         let tb=document.getElementById("tf")
         document.write(tb.value,"<br>")
         //tb.value="222"; modify

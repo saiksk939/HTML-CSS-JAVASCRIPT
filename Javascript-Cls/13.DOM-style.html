@@ -1,0 +1,36 @@
+<!--
+    style => used to change CSS settings
+    syn: object.style.css-prop=value; 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS STYLE USING JS</title>
+</head>
+<body>
+    <h1 id="head">Welcome</h1>
+    <input type="color" id="polor"> 
+    <button onclick="changeStyle()">change style</button>
+    <hr>
+    <script>
+        function changeStyle()
+        {
+        let h=document.getElementById("head");
+        //h.style.color="red";
+        //OR
+        
+        /*let c=prompt("which color?");
+        h.style.color=c;
+        OR */
+        
+        let c=document.getElementById("polor");
+        h.style.color=c.value;
+        h.style.fontSize="100px";
+        h.style.textAlign="center";
+        }
+    </script>
+</body>
+</html>

@@ -4,13 +4,46 @@ DOM Methods
         it creates an object of special html Element
         its document object's Method
 syn: document.getElementById("id")
-- - - - -
+
+    innerText => used for paired tags & non-input elements
+              => it supports only text data, but not html tags
+    innerHTML => used for paired tags & non-input elements
+              => it supports only text data & html tags
+    
+    value => used for un-paired tags & input elements
+------------------
+    style => used to change CSS settings
+    syn: object.style.css-prop=value; 
+------------------
+    Event Handling
+    1st approch:
+        addEventListener() => predefine methos
+                           => used to attch or link events to html elements
+        syn:object.addEventListener("event-name",task)
+            event-name=> specity the eventname with out on
+                        ex: click, load 
+            task => set of steps
+                    in form of function or funcational expr or arrow function
+    
+    2st approch:
+    => event property used to attch or link events to html elements
+        syn:object.event-name=task
+            event-name=> specity the eventname with on
+                        ex: onclick, load 
+            task => set of steps
+                    in form of funcational expr or arrow function    
+Note: we can implement no.of events on html element
+
+list of events: onclick, ondblclick, onsubmit, onfocus, onblur, onexit, 
+                onchange, onmousemove, onmouseover, onmouseexit, onmousedrag, 
+                onkeypress, onload, oncopy, onpaste, oncut, oncontextmenu etc...
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - -
     getElementByName()
         get instance(or)Object of html Element By using Name attri()
         it creates an object of special html Element
         its document object's Method
 syn: document.getElementByName("name")
-- - - - -
+- - - - - -- - -- - - - -  - - - - - - - - - -  - - - - - - - - - - - - - -
     getElementByTagName()
         get instance(or)Object of html Element By using TagName 
         it creates an object of special html Element

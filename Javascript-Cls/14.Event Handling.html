@@ -1,0 +1,60 @@
+<!--
+    Event Handling
+    1st approch:
+        addEventListener() => predefine methos
+                           => used to attch or link events to html elements
+        syn:object.addEventListener("event-name",task)
+            event-name=> specity the eventname with out on
+                        ex: click, load 
+            task => set of steps
+                    in form of function or funcational expr or arrow function
+    
+    2st approch:
+    => event property used to attch or link events to html elements
+        syn:object.event-name=task
+            event-name=> specity the eventname with on
+                        ex: onclick, load 
+            task => set of steps
+                    in form of funcational expr or arrow function    
+
+Note: we can implement no.of events on html element
+
+list of events: onclick, ondblclick, onsubmit, onfocus, onblur, onexit, 
+                onchange, onmousemove, onmouseover, onmouseexit, onmousedrag, 
+                onkeypress, onload, oncopy, onpaste, oncut, oncontextmenu etc...
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events JS</title>
+    <script>
+        function myfun()
+        {
+            alert("Yeh,uou pushed me")
+        }
+    </script>
+</head>
+<body>
+    <h1>Demo on js events</h1>
+    <button id="btn1">Push</button><br>
+    <button id="btn2">Pull me</button><br>
+    <hr>
+    <script>
+        //1st approch
+        const b1=document.getElementById("btn1");
+        b1.addEventListener("click", myfun);
+        //OR
+        //document.getElementById("btn1").addEventListener("click", myfun);
+
+        //2nd approch
+        const b2=document.getElementById("btn2");
+        b2.onclick=function(){alert("yeh, you pulled me");} ;
+        //OR
+        //document.getElementById("btn2").onclick=function(){alert("yeh, you pulled me");} ;
+    </script>
+</body>
+</html>
