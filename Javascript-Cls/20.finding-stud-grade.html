@@ -1,0 +1,104 @@
+<!-- input data, rollno, name, marks, in 4subjects
+Avg     Grade
+90-100  A+
+80-89   A
+70-79   B+
+60-69   B
+50-59   C
+40-49   D
+0-39    Fail
+  Note: min marks in every sub is 40
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding stud grade</title>
+
+    <style>
+        table{
+            width: 20%;
+            background-color: rgb(217, 156, 59);
+        }
+        caption{
+            background-color: rgb(219, 207, 72);
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <table align="center">
+    <caption><h3>Marks Report</h3><caption>
+    <tr>
+       <td><label>Name</label></td>
+       <td><input type="text" id="inam"></td> 
+    </tr>
+    <tr>
+        <td><label>Rollno</label></td>
+        <td><input type="text" id="irno"></td> 
+    </tr>
+    <tr align="center">
+        <td colspan="2"><label>Marks in</label></td>
+    </tr>
+    <tr>
+        <td><label>HTML</label></td>
+        <td><input type="text" id="ihm"></td> 
+    </tr>
+    <tr>
+        <td><label>CSS</label></td>
+        <td><input type="text" id="ics"></td> 
+    </tr>
+    <tr>
+        <td><label>Javascript</label></td>
+        <td><input type="text" id="ijs"></td> 
+    </tr>
+    <tr>
+        <td><label>Bootsrap</label></td>
+        <td><input type="text" id="ibts"></td> 
+    </tr>
+    <tr align="center">
+        <td colspan="2"><button id="ibt">Get result</button></td>
+    </tr>
+    <tr align="center">
+        <td colspan="2">
+            <output id="total"></output><br>
+            <output id="average"></output><br>
+            <output id="grade"></output>
+        </td>
+    </tr>
+    </table>
+    <script>
+        document.getElementById("ibt").onclick=function(){
+            let html, css, js, bs, tot, avg, grd;
+            html=+document.getElementById("ihm").value;
+            css=+document.getElementById("ics").value;
+            js=+document.getElementById("ijs").value;
+            bs=+document.getElementById("ibts").value;
+            tot=html+css+js+bs;
+            avg=tot/4;
+            if(html>39 && css>39 && js>39 && bs>39){ //pass
+                if(avg>=90)
+                   grd="A+";
+                else if(avg>=80)
+                    grd="A";
+                else if(avg>=70)
+                    grd="B+";
+                else if(avg>=60)
+                    grd="B";
+                else if(avg>=50)
+                    grd="C";
+                else
+                    grd="D";
+            }else{
+                grd="fail";
+            }
+        
+            document.getElementById("total").innerText="Total Marks :"+tot;
+            document.getElementById("average").innerText="Average Marks :"+avg;
+            document.getElementById("grade").innerText="Grade :"+grd;
+            }
+    </script>
+</body>
+</html>

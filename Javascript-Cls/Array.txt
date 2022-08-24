@@ -1,0 +1,31 @@
+var ==> stores ivalue 
+array ==> no.of values 
+
+storing no.of values with a same refname is called array
+array to store same of data & diff types of data
+js array are dynamic 
+simple coding while working with group of values 
+data maintance 
+transporting data easy 
+local scope & global scope 
+
+Syn:- 
+1st approch: 
+    by using array literal [] 
+    var/let/const refvar = []; 
+
+znd approch: 
+    by using new 
+    refvar = new Array(); 
+
+accessing syn: 
+    refvar[index] <== it returns the value/sub value 
+    (index means slno (logical rep) of memory blocks. index starts with o) 
+
+to store data Syn: 
+    refvar[index]=value; 
+
+length: its predefine property, used to finding size of array 
+        also used to set the size of array 
+    Syn: refvar.length ==> return size(no.of values) 
+         refvar.Iength=N; 
