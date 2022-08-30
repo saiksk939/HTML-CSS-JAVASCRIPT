@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array de-structuring</title>
+</head>
+<body>
+    <h3>Array de-structuring</h3>
+    <script>
+        let a=[10,20,30]
+        //x=a[0]; y=a[1]; z=a[2]; //old style
+        let [x,y,z]=a;  //new style
+        document.write(x+'<br>'+y+'<br>'+z+'<br>')
+        document.write('A is : '+a)
+    </script>
+    <hr>
+    <script>
+        let b=[11,22,33,44,55,66];
+        //let [v1,v2,v3,v4]=b; 
+        //let [v1,,v2,v3,,v4]=b;  //skip element(,)
+        let[v1,,,,v2]=b  //skip element(,)
+        document.write('B is:'+b+'<br>')
+        document.write(v1+'<br>'+v2+'<br>')
+    </script>
+</body>
+</html>
