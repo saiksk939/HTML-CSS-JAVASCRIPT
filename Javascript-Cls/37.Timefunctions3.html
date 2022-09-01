@@ -1,0 +1,44 @@
+<!--Example on timer function
+    Both are predefine functions, window object functions.
+    setTimeout==>it performs given task, only once, after some 
+        syn: window.setTimeout(tasks, interval)
+
+    setInterval==>it performs given task, repeatedly executed, after some time
+        syn: window.setInterval(tasks, interval)
+
+        task==> which code to execute in the form function/fun expr/arrow funs
+        interval==> milli sec
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval BGColor</title>
+    <script>
+        function showCloak(){
+        let d =new Date();
+        let head=document.getElementById('h');
+        head.innerText=d.toLocaleTimeString();
+    }
+    function changeBGColor(){
+        let c='#'+parseInt(Math.random()*1000000);
+        document.getElementById('b').style.backgroundColor=c;
+
+    }
+    </script>
+</head>
+<body id="b">
+    <h3>Time function --Examples2</h3>
+    <h3 id="h"></h3>
+    <button id="bt">Stop</button>
+    <script>
+    setInterval(showCloak,'1000'); //for every 1sec it calls showclock()
+    let x=setInterval(changeBGColor,'3000'); //for every 3sec it changes body BGColor00 changeBGColor()
+    document.getElementById('bt').onclick=function(){
+        clearInterval(x);
+    }
+    </script>
+</body>
+</html>

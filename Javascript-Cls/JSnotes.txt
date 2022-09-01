@@ -93,3 +93,22 @@ JavaScript string with escape sequences: An escape character is consisting
 G, \': single quote
 7. \": double quote
 8. \\: Backslash
+-------------------------------------------------------------------------------
+
+from online reatjs notes
+
+-Array features
+	isArray()
+	map()
+	filter()
+	forEach()
+	every()
+	some()
+	indexOf()
+	lastIndexOf()
+
+-Json features
+	stringify()
+
+-Date features
+	valueOf()

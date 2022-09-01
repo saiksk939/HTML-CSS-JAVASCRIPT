@@ -1,0 +1,17 @@
+from online reatjs notes
+
+-Array features
+	isArray()
+	map()
+	filter()
+	forEach()
+	every()
+	some()
+	indexOf()
+	lastIndexOf()
+
+-Json features
+	stringify()
+
+-Date features
+	valueOf()
