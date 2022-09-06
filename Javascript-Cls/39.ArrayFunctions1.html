@@ -1,0 +1,42 @@
+<!--
+    arrow functions
+        design with => symbol
+        Instant designing function or call back functions
+        no name function
+        self executing functions
+        
+        syn: ()=>{body}
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array functions</title>
+</head>
+<body>
+    <h3>Array functions</h3>
+    <script>
+        //arrow fun defination with out(w/o) param & w/o return 
+        const myfun=()=>{document.write('hi, iam arrow function <br>');};
+
+        //arrow fun defination with param & w/o {} (with imp return)
+        const add=(a,b)=>a+b;  //means return a+b;
+
+        //arrow fun defination with param & with return
+        const sub=(a,b)=>{return a-b};
+        
+        //arrow fun defination with 1 param & w/o {} (with imp return)
+        const divide=n=>n*(n+1)/2;
+
+        document.write(myfun,'<br>')
+        
+        //fun callings 
+        myfun();
+        document.write(add(1,2),'<br>')
+        document.write(sub(1,2),'<br>')
+        document.write(divide(1),'<br>')
+    </script>
+</body>
+</html>

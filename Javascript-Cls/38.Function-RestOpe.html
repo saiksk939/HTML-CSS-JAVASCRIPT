@@ -1,17 +1,26 @@
-<!--it has previous version in github-->
+<!--it has previous version in github
+Rest parameters valid and invalid
+=>function myfun(...a){}        <==valid
+=>function myfun(...a,...b){}   <==invalid
+=>function myfun(...a,b,c){}    <==invalid
+=>function myfun(a,...b,c){}    <==invalid
+=>function myfun(a,b,...c){}    <==valid
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rest Operator Examples</title>
+    <title>Rest Operator Problem</title>
 </head>
 <body>
-    <h3>Rest Operator Examples</h3>
+    <h3>Function with Rest Operator</h3>
     <script>
-        function sum(a,b,c){   //a,b,c are parameters
-            let s=a+b+c;
+        function sum(...n){  //rest parameters   
+            let s=0;
+            for(e of n)
+            s+=e;
             return s;
         }
         document.write(sum(1,2,3),'<br>')
