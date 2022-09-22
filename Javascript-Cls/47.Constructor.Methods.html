@@ -1,0 +1,48 @@
+<!--It was copied from 42.Objects.literals.html
+    In this program was edited using constructor
+    1) Difference (Compare to Objects literal method program & Construtor(Object literals method is small length progrm
+        but constructor method is long length program ))
+    2) Difference (Objects literals method is 1 time usable, but 
+        constructor method is reusable) 
+    constructor is better
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <h3>constructor with methods</h3>
+    <script>
+        //constructor with prop & methods
+        function stu(rno,name,total){
+            //prop init
+            this.rno=rno, 
+            this.name=name,
+            this.total=total,
+            //methods
+            this.getResult=function(){
+                if(this.total>=400)
+                    return 'Pass';
+                else
+                    return 'Fail';
+            }
+        }
+
+        //obj creation 
+        let a1=new stu(1,'Jhon',450)
+        let a2=new stu(2,'smith',500)
+        document.write(`Rollno : ${a1.rno}<br>`)
+        document.write(`Name : ${a1.name}<br>`)
+        document.write(`Total : ${a1.total}<br>`)
+        document.write(`Result : ${a1.getResult()}<br><br>`)
+        
+        document.write(`Rollno : ${a2.rno}<br> Name : ${a2.name}<br> Total : ${a2.total}<br> Result : ${a2.getResult()}<br>`)
+
+    </script>
+    
+</body>
+</html>

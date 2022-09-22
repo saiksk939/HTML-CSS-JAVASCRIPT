@@ -1,0 +1,54 @@
+<!--Example on String interpolation
+    ==>Placing expression in between string
+    ==>dynamic Insert values of expression between strings
+    ==>interpolation need template literal ` `
+    syn:  `${expr}`
+        `text ${expr} text ${expr} text ${expr} .....`
+        expr==>arith/relation/logical/call fun/fun-expr/arrow-fun
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String interpolation</title>
+</head>
+<body>
+    <h3>demo on interpolation</h3>
+    <script>
+        let x=2, y=8;
+        document.write(`x val ${x}<br>`) //using ` ` without breaking quotations
+        document.write(`y val ${y}<br>`)
+        document.write(`Sum is ${x+y}<br>`)
+        document.write(`${x+y}<br>${x*y}<br>${x/y}<br><br>`)
+        
+        let name='Ramu'
+        let z=`Hi ${name}`
+        document.write(`${z}<br><br>`)
+
+        let n=+prompt('enter number')
+        if(n%2==0)
+        document.write(`${n} is Even number<br><br>`)
+        else
+        document.write(`${n} is Odd number<br><br>`)
+
+        let res=`Sum is ${s+t}<br>
+        let s=4,t=6; 
+                 Sub is ${s-t}<br>
+                 MUl is ${s*t}<br>
+                 Div is ${s/t}<br>`;
+        document.write(res,'<br>')
+
+        function myfun(){
+            return 'Hi';
+        }
+        function nsum(n){
+            return n*(n+1)/2;
+        }
+        document.write(`${myfun()}<br>`)
+        document.write(`Natsum value is ${nsum(10)}<br>`)
+
+    </script>
+</body>
+</html>

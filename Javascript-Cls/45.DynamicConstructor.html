@@ -1,0 +1,46 @@
+<!--
+Constructor types:
+    > non-param constructor
+        => designing constructor w/o parameters is called NPC
+        => NPC are used for static initilization of object
+        means every object was init with same values
+
+    > param constructor
+        => designing constructor with
+        => NPC are used for dynamic initilization of object
+           means every object was init with different values
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>param constructor</title>
+</head>
+<body>
+    <h3>param constructor</h3>
+    <script>
+        //const designing
+        function book(id,title,price,author)
+        {
+            this.id=id;
+            this.title=title;
+            this.price=price;
+            this.author=author;
+        }
+        
+        //obj creation & init
+        let b1=new book(101,'web',560,'Tim');
+        let b2=new book(102,'C pro',850,'DR Jhon');
+        let b3=new book(103,'Java',420,'Mike');
+        document.write(`${b1.id} &nbsp;&nbsp; ${b1.title} &nbsp;&nbsp;
+        ${b1.price} &nbsp;&nbsp; ${b1.author} &nbsp;&nbsp;<br>`);
+        document.write(`${b2.id} &nbsp;&nbsp; ${b2.title} &nbsp;&nbsp;
+        ${b2.price} &nbsp;&nbsp; ${b2.author} &nbsp;&nbsp;<br>`);
+        document.write(`${b3.id} &nbsp;&nbsp; ${b3.title} &nbsp;&nbsp;
+        ${b3.price} &nbsp;&nbsp; ${b3.author} &nbsp;&nbsp;<br>`);
+    </script>
+</body>
+</html>

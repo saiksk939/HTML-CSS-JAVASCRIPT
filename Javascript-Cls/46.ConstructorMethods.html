@@ -1,0 +1,57 @@
+<!--
+Constructor types:
+    > non-param constructor
+        => designing constructor w/o parameters is called NPC
+        => NPC are used for static initilization of object
+        means every object was init with same values
+
+    > param constructor
+        => designing constructor with
+        => NPC are used for dynamic initilization of object
+           means every object was init with different values
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>param constructor</title>
+</head>
+<body>
+    <h3>param constructor</h3>
+    <script>
+        //const designing
+        function sample()
+        {
+            this.natsum=function(n){
+                return n*(n+1)/2;
+            }
+            this.isprime=(n)=>{
+                let found=true;  //let us asssume 1 & ifself are factors
+                for(i=2; i<=n/2; i++){
+                    if(n%i==0){
+                        found=false;
+                        break;  //stop loop
+                    }
+                }
+                if(found==true){
+                    return n+' Prime number';
+                }
+                else{
+                    return n+' Not a Prime number';
+                }
+            }
+        }
+        
+        //obj creation & init
+        let obj=new sample();
+        document.write(`${obj.natsum(5)}<br>`)
+        document.write(`${obj.isprime(11)}<br>`)
+        document.write(`${obj.isprime(28)}<br>`)
+
+
+    </script>
+</body>
+</html>

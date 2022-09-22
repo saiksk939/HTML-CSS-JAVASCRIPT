@@ -1,0 +1,7 @@
+Create-react-app:
+	i) npx:
+			npx create-react-app <project name>
+	
+	
+	ii) npm:
+			npm install create-react-app <project name>

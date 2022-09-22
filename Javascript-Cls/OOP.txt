@@ -1,0 +1,79 @@
+Object Oriented  Programming (OOP) is a Programming paradigm (Programming structure), 
+which is based on the concept of "Object".
+
+* Object represents physical component.
+* Object is a real-time entity
+    > We can see
+    > We can touch
+    > We can use
+ Ex:dog, pen,book, alarm, phone,cake, car etc..
+
+* Object is an instance of a class, nothing but memory block (one copy of class)
+* Object is a collection of members:
+    1. properties(variables or fields)
+    2. methods(functions)
+
+* Proberties: details about the object. Properties are the variables which are stored inside the
+  Object. Properties are used to store data about specific person,product or thing.
+    Ex: array.length=5
+
+* Methods: to perform manipulations on the properties. Methods are the functions stored
+  inside the object. Methods read values from properties, write values into properties,
+  to perform logical operations.
+    Ex: array.sort() array.push() array.pop()
+
+Note: objects are used to data maintenance
+
+Array           Object
+Seq             random
+index base      properties
+[]              {}
+
+Example:
+    Car is an object:                person is an object
+    -properties                      -properties
+        * car model:120                 > name: siva
+        * car color:white               > age:50
+        * Car no: 5579                  > gen:male
+    
+    -methods                         -methods
+        * Start()                       > sleep()
+        * Change gear()                 > eat()
+        * Stop()                        >talk()
+* In the above example the "car" object has three properties called "car model,car color,
+  car no", which have respective values.
+
+We have two types of OOP languages:
+    1. class-based Object-Oriented Programming
+        Ex: java, .net, python, cpp etc..
+    
+    2. prototype-based(object based) Object-Oriented Programming
+        Ex: javascript, typescript, perl, php,...
+
+"Object" is a predefine class, every class/object should be derived
+from "Object" class prototype.
+
+Creating objects:
+------------------
+We can create objects in 2ways:
+    1. with object literal-> {}
+    2. by using construtor function -> new
+
+Object literals
+-------------
+* Object literals are represented as curly braces { }, which can include properties and methods.
+* The property and values are separated with:symbol
+* The method-name and body are separated with :symbol
+Syntax:
+----------
+v/l/crefname={“property”:value, property:value, ...,
+              “method-name”: function() {body},
+               method-name()}{body} };
+Note: methods we can write in any of 3forms, 
+i.e like normal function or expression or arrow
+
+how to access?
+    refname.property
+    refname.property=value 
+    refname>method-name()  
+Note: every class and every object should be derived from a class called 'Object' class(lib class).

@@ -1,0 +1,34 @@
+Inheritance
+-----------
+    > Relationship  
+    > the process of creating a new object based on another object prototype (exists) is called
+    "inheritance".
+            OR
+    > the process of creating a new constructor function based on another constructor function
+    (exists already) is called "inheritance".
+    > one object is deriving from an existing object. b
+    > hence all the properties and methods of the 1st constructor (parent) is inherited into the
+    2nd constructor (child). I
+    > sharing & enhancement
+    > by calling 1st object's constructor from 2nd object's constructor function.
+syn:
+function constructorP(parameters) //parent
+{
+        properties
+        methods
+}
+function constructorC(parameters)  //child
+{
+        constructorP(); <- inheritance
+                OR
+        constructorP.call(this,parameters); <- inheritance
+
+        properties
+        methods
+        //here  we access CP properties & methods directly
+}
+
+call()
+------
+call() is a predefine function, its used to call parent constructor
+function from child constructor function.

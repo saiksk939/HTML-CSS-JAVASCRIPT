@@ -7,9 +7,40 @@
     <title>ForEach</title>
 </head>
 <body>
+    <h3>Sorting</h3>
     <script>
     let a=[1,2,3,4,5,6,];
     a.forEach((b)=>{document.write(b+' ');})  //b is temporary var
+    
+    document.write('<br>')
+
+    let x=['rama','ramarao','ramakrishna','ramarama','ramana','ramareddy']
+    x.forEach((y)=>{document.write(y+', ')})
+    document.write('<br>')
+    x.sort(); //sorting elements in ascending order(A-Z)
+    document.write(x+',<br>')
+
+    let c=[12,85,55,62,42,31,7,35,65]
+    document.write(c+', original order <br>')
+    c.sort((x,y)=>y-x); //For sorting elements in decending order(A-Z)
+    document.write(c+', decending order ')
+    </script>
+    <hr>
+    
+    <h3>Sorting with html tags</h3>
+    <label>First number</label>
+    <input type="text" id="tf1"><br>
+    <label>Second number</label>
+    <input type="text" id="tf2"><br>
+    <button id="bt">Add</button><br>
+    <output id="res"></output>
+    <script>
+        document.getElementById('bt').addEventListener('click',()=>{
+            const t1=+document.getElementById('tf1').value
+            const t2=+document.getElementById('tf2').value
+            let s=t1+t2;
+            document.getElementById('res').value='Sum is '+s;
+        })
     </script>
 </body>
 </html>

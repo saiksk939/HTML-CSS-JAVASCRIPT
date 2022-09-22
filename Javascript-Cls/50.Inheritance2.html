@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance</title>
+</head>
+<body>
+    <h3>demo on Inheritance 2</h3>
+    <script>
+        function Human(name,age,gen)  //parent
+        {
+            //init
+            this.name=name;
+            this.age=age;
+            this.gen=gen;
+        }
+        function Employee(id,job,sal)  //child
+        {
+            Human.call(this,'Ram',40,'Male');   //calling parent inheritance
+            //init
+            this.id=id;
+            this.job=job;
+            this.sal=sal;
+        }
+
+        //accessing
+        emp=new Employee(101,'ASE',20000);
+        document.write(`Employee Details: <br>
+                        ${emp.id} &nbsp;&nbsp; ${emp.name} &nbsp;&nbsp; ${emp.age} &nbsp;&nbsp; 
+                        ${emp.gen} &nbsp;&nbsp; ${emp.job} &nbsp;&nbsp; ${emp.sal} &nbsp;&nbsp;<br>`);
+    </script>
+</body>
+</html>

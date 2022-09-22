@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Objects</title>
+    </head>
+    <body>
+        <h3>Bill Preparation Page</h3>
+        <table>
+        <tr>
+            <td><input type="text" id="pname" placeholder="Product Name">
+            &nbsp;&nbsp;</td>
+        </tr>  
+        <tr>
+            <td><input type="text" id="qty" placeholder="NO.of Items/Quantity">
+            &nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td><input type="text" id="price" placeholder="Product Price"></td>
+        </tr>
+        <tr>    
+            <td><button id="bt1">add to cart</button> &nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td><button id="bt2">Genrate invoice</button></td>
+        </tr>
+        </table>
+        
+        <script>
+            //global dec
+            const products=new Array();
+            var index=0;
+            function Product(pname,qty,price){
+                //prop init
+                this.pname=pname;
+                this.qty=qty;
+                this.price=price;
+            }
+            document.getElementById('bt1').onclick=function(){
+                const pn=document.getElementById('pname');
+                const qt=document.getElementById('qty')
+                const pr=document.getElementById('price')
+                //assigning product details to array
+                products[index]=new Product(pn.value,+qt.value,+pr.value)
+                index++;
+                pn.value=""; qt.value=""; pr.value="";
+                pn.focus();
+            };
+            
+            document.getElementById('bt2').onclick=function(){
+                let slno=1,pamt=0,billamt=0,gst=0,totalamt=0;
+                for(p of products) //fetching 1-by-1 product object
+                {
+                    pamt=p.qty*p.price;
+                    document.write(`${slno} &nbsp;&nbsp; ${p.pnamt} &nbsp;&nbsp; ${p.qty} &nbsp;&nbsp; ${p.price} &nbsp;&nbsp; 
+                    ${pamt}<br>`);
+                    slno++;
+                    billamt=billamt+pamt;
+                }
+                gst=billamt*0.12;
+                totalamt=billamt+gst;
+                document.write(`Bill Amount :&#8377 ${billamt}<br>`);
+                document.write(`GST Amount :&#8377 ${gst}<br>`);
+                document.write(`Total Bill Amount :&#8377 ${totalamt}<br>`);
+                document.write(`<button onclick="print()">Print Bill</button>`);
+            }
+        </script>
+    </body>
+</html>
