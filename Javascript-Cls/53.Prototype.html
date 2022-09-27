@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <h3>demo on Prototype</h3>
+    <script>
+        //object literal
+        const ob={a:10,b:20};
+        const ob2={a:11,b:22};
+
+        document.write(`${ob.a} &nbsp;&nbsp ${ob.b}<br>`)
+        document.write(`${ob2.a} &nbsp;&nbsp ${ob2.b}<br><br>`)
+
+        //prototyping
+        Object.prototype.c=30;  //its adding new prop 'd' & method to all objects 
+        Object.prototype.add=function(){
+            return this.a+this.b+this.c;
+        }
+        document.write(`${ob.a} &nbsp;&nbsp ${ob.b} &nbsp;&nbsp 
+        ${ob.c} &nbsp;&nbsp <br> ${ob.add()}<br><br>`)
+        document.write(`${ob2.a} &nbsp;&nbsp ${ob2.b} &nbsp;&nbsp 
+        ${ob2.c} &nbsp;&nbsp <br> ${ob2.add()}<br>`)
+
+        //prototyping
+        ob2.d=40;  //adding new prop 'd' to ob2 only
+        document.write(`${ob.d}<br>`)
+        document.write(`${ob2.d}<br>`)
+
+    </script>
+</body>
+</html>
