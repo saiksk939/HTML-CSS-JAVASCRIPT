@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+</head>
+<body>
+    <h3>class constructor with Arith operations</h3>
+    <script>
+        class Arith
+        {
+            constructor(a,b){
+                this.a=a;
+                this.b=b;
+            }
+            //non-static
+            add(){
+                return this.a+this.b;
+            }
+            sub(){
+                return this.a-this.b;
+            }
+            product(){
+                return this.a*this.b;
+            }
+            div(){
+                return this.a/this.b;
+            }
+        }
+
+        //accessing
+        const ob=new Arith(10,20);
+        document.write(`Addition : ${ob.add()}<br>`)
+        document.write(`Subtract : ${ob.sub()}<br>`)
+        document.write(`Multiply : ${ob.product()}<br>`)
+        document.write(`Division : ${ob.div()}<br>`)
+
+    </script>
+</body>
+</html>

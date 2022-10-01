@@ -1,0 +1,71 @@
+<!--example on JS classes with methods 
+We can write two types of methods in js classes:
+    > non-static methods
+        => non-static methods we can access by using object only
+    syn: refname.method()
+
+    >static methods
+        => static methods we can access by using classname only
+        => static methods we can create by using 'static' keyword
+    syn: className.method()
+
+    syn:
+        class className
+        {
+            method-name(){
+                body
+            }
+            static methods-name(){
+                body
+            }
+        }
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+</head>
+<body>
+    <h3>demo on static methods</h3>
+    <script>
+        //class creation
+        class Maths
+        {
+            //static
+            static add(a,b){
+                return a+b;
+            }
+            static sub(a,b){
+                return a-b;
+            }
+        }
+
+        //access
+        document.write(`${Maths.add(10,20)}<br>`)
+        document.write(`${Maths.sub(10,20)}<br>`)
+        //const ob=new Maths();  error because it is non static method
+        //ob.add(1,2); error because it is non static method
+        //class creation
+
+        class Sample
+        {
+            //non-static
+            add(a,b){
+                return a+b;
+            }
+            sub(a,b){
+                return a-b;
+            }
+        }
+
+        //access
+        const ob=new Sample();
+        document.write(`${ob.add(1,2)}`);
+        //Sample.sub();  error because it is static method  
+    </script>
+</body>
+</html>

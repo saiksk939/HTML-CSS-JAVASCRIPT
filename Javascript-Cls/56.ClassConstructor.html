@@ -1,0 +1,44 @@
+<!--example on JS classes 
+
+constructor ==> constructor is one of member of class
+            ==> constructor should be created with "constructor" keyword
+            ==> constructor should not have any name
+            ==> we can create non-param constructor or param constructor
+            ==> we can write max one constructor
+    syn:
+        class className
+        {
+            constructor()
+            {
+                init code
+            }
+        }
+        refvar=new className();
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+</head>
+<body>
+    <h3>demo on js class</h3>
+    <script>
+        //class creation
+        class Sample
+        {
+            constructor(){
+                this.x=10;
+                this.y=20;
+            }
+        }
+
+        //obj creation
+        const samp=new Sample();
+        document.write(`${samp.x}<br> ${samp.y}`)
+    </script>
+</body>
+</html>

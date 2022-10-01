@@ -11,10 +11,12 @@ syn: document.getElementById("id")
               => it supports only text data & html tags
     
     value => used for un-paired tags & input elements
-------------------
+-------------------------------------------------------------------------------------------
+
     style => used to change CSS settings
     syn: object.style.css-prop=value; 
 ------------------
+
     Event Handling
     1st approch:
         addEventListener() => predefine methos
@@ -38,12 +40,14 @@ list of events: onclick, ondblclick, onsubmit, onfocus, onblur, onexit,
                 onchange, onmousemove, onmouseover, onmouseexit, onmousedrag, 
                 onkeypress, onload, oncopy, onpaste, oncut, oncontextmenu etc...
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - -
+
     getElementByName()
         get instance(or)Object of html Element By using Name attri()
         it creates an object of special html Element
         its document object's Method
 syn: document.getElementByName("name")
 - - - - - -- - -- - - - -  - - - - - - - - - -  - - - - - - - - - - - - - -
+
     getElementByTagName()
         get instance(or)Object of html Element By using TagName 
         it creates an object of special html Element

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <h3>demo on Prototype Constructor</h3>
+    <script>
+        //constructor function
+        function Test(a,b){
+            this.a=10;
+            this.b=20;
+        }
+
+        function Sample(){
+            this.x=11;
+            this.y=12;
+        }
+        //object creation
+        const ob=new Test(10,20);
+        document.write(`a ${ob.a} &nbsp;&nbsp b ${ob.b}<br>`)
+
+        const ob2=new Sample();
+        document.write(`x ${ob2.x} &nbsp;&nbsp y ${ob2.y}<br>`)
+
+        //prototyping
+        Test.prototype.c=30;  //its adding new prop 'c' to all objects of Test constructor
+        Sample.prototype.z=33;  //its adding new prop 'z' to all objects of Sample constructor
+
+        document.write(`c ${ob.c}<br>`)
+        document.write(`z ${ob2.z}<br>`)
+    </script>
+</body>
+</html>

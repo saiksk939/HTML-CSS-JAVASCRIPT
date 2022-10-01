@@ -1,0 +1,47 @@
+<!--example on JS classes (JS6 feature)
+
+    class ==> it is a template
+          ==> its an encapsulated product
+              encap means grouping of members
+          ==> class is coll of properties, constructor and methods
+          ==> class is a logical component, so accessing for that ckass we have to create object
+    
+    syn:
+        class className
+        {
+            constructor
+            methods...
+        }
+        refvar=new className();
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+</head>
+<body>
+    <h3>demo on js class</h3>
+    <script>
+        //class creation
+        class Sample
+        {
+            //let a; error
+            //let a=10; error
+            //vara=10; error
+            //const a=10; error
+        }
+
+        //obj creation
+        const samp=new Sample();
+        samp.a=10;  //prototyping
+        samp.b=20;  //prototyping
+        document.write(`A:${samp.a}<br>`)
+        document.write(`B:${samp.b}<br>`)
+
+    </script>
+</body>
+</html>

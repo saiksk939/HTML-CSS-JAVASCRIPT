@@ -1,0 +1,52 @@
+<!--example on JS class inheritance
+==> we can build the relation between multiple classes by using 'extends' and super()
+==> JS classes support 3 types inheritance
+
+syn: class className1    //parent
+    {
+        constructor
+        methods
+    }
+    class className2 extends className1  //child
+    {
+        constructor()
+        {
+            super();
+              or
+            super(param);
+        }
+        methods
+    }
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+</head>
+<body>
+    <h3>class inheritance</h3>
+    <script>
+        class One //parent
+        {
+            constructor(){
+                document.write(`Parent constructor invoked<br>`);
+            }
+        }
+        class Two extends One
+        {
+            constructor(){
+                super();    //calling parent constructor
+                document.write(`child constructor invoked <br>`);
+            }
+        }
+
+        //accessing
+        new Two();  //or const ob=new Two();
+
+    </script>
+</body>
+</html>
